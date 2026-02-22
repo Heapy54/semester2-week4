@@ -18,5 +18,30 @@ int main( int argc, char **argv ) {
     Your code
     */
 
+    //target character
+   char target = argv[argc-1][0];
+
+   //concatinate all argumanets except last one
+   for(int i =1; i<argc-1;i++){
+    strcat(sentence,argv[i]);
+    if(i < argc -2){
+        strcat(sentence, " ");
+    }
+   }
+
+   //Search for the first occurence
+   char *pos = strchr(sentence, target);
+
+   printf("Sentence: %s\n", sentence);
+
+   //Print the result
+   if(pos !=NULL){
+    int index = pos-sentence;
+    printf("First occurence of '%c' at position %d\n",target,index);
+   }
+   else{
+    printf("Character '%c' not found\n", target);
+   }
+
     return 0;
 }
