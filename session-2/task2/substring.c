@@ -13,3 +13,30 @@
  6. print the answer appropriately as pointer, character and string
  */ 
 
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+
+    char string[] = "The quick brown fox jumped over the lazy dog";
+    char substring[]= "ump";
+
+    char *result = strstr(string,substring);
+
+    if(result != NULL){
+        printf("String pointer is %p\n", (void *)result);
+
+
+        printf("First character is %c\n",*result);
+
+        printf("String position is %s\n",result);
+
+
+    }
+    else{
+        printf("Not in the string\n");
+    }
+
+
+    return 0;
+}

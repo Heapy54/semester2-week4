@@ -9,6 +9,7 @@ import sys
 
 print(f"Number of args: {len(sys.argv)}")
 print(f"argv: {sys.argv}")
+print(f"argv type: {type(sys.argv)}")
 
 # what is printed?
 # what form is the data?

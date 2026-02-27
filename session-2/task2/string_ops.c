@@ -14,10 +14,12 @@ int main( void ) {
     // use printf to verify the following tests
 
     // use 'strcmp' to compare 2 strings - print the return value
+    printf("%d\n",strcmp(str1,str2));
 
     // use 'strcat' to concatenate 2 strings - print the resulting string
-
+    printf("%s\n", strcat(str1,str2));
     // use 'strcpy' to copy a string into str3 - print string 3
+    printf("%s\n", strcpy(str3,str2));
 
     return 0;
 }

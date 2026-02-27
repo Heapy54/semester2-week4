@@ -18,6 +18,9 @@ int main( int argc, char **argv ) {
     /*
     Your code
     */
+    for (int k = 1; k<argc; ++k){
+        printf("argv[%d] is : %s\n", k, argv[k]);
+    }
 
     return 0;
 }
